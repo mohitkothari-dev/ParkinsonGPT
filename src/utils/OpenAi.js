@@ -18,7 +18,7 @@ export const sendMsgToAI = async (msg) => {
       const responseData = await response.json();
   
       // Handle response based on your API's structure
-      if (responseData && responseData.text) { // Replace "yourDataField" with the actual field containing the response text
+      if (responseData && responseData.text) { 
         return responseData.text;
       } else {
         console.error('Error: Your API response did not contain a valid response field.');
